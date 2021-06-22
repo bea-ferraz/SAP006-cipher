@@ -1,0 +1,78 @@
+body {
+    background-image: url(Img/Startwars3.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover ;
+   text-align: justify;
+   color: #000000;
+}
+
+a {
+    display: flex;
+    justify-content: left;
+    padding-top: 25px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 150px;
+    margin-top: 50px;    
+}
+.table textarea {
+    width: 600px;
+    height: 360px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    border-color:#fffefe;
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px;
+    
+}
+
+.key input {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    border-radius: 60px;
+    margin-left: 30px;
+    width: 120px;
+    height: 120px;
+}
+input {
+    text-align: center;
+    }
+p {
+    font-size: 25px;
+    margin-top: 65px;
+}
+.buttons { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+}
+button {
+    background-color: #e4f551 ;
+    border-radius: 20px;
+    height: 58px;
+    width: 264px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 25px;
+}
+    button:hover {
+    background-color: #e2ec52;
+    }
+footer {
+    background-color: rgba(255, 255, 255, 0.178);
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+}
