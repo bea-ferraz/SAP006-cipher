@@ -1,44 +1,48 @@
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-  <title>César Cipher</title>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  
+<html>
+   <head>
+      <meta charset="utf-8"/>
+      <meta
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+      name="viewport"/>
+      <title>César Cipher</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+    <body>
+          <header>
+                <h1>CÉSAR CIPHER WARS</h1>
+                <h2>
+                 <p> O que é cifra de césar:
+                 <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Clique aqui</a></p>
+                  <p> Frases de Star Wars:<a href="https://www.pensador.com/frases_star_wars/" target="_blank">Clique aqui</a></p>
+               </h2>
+          </header>
+    <main>
+      <div class="table">
+        <form>
+          <textarea
+                id="text"
+                name="text_message"
+                type="text"
+                placeholder="Digite uma frase de Star Wars." wrap="soft" >
+          </textarea>
+          <div class="key"><p><strong> DESLOCAMENTO </strong></p><input id="offset" type="number" name="offset" value="0" />
+          </div>
+          <textarea
+                 id="code"
+                 name="cipher"
+                 type="text"
+                 placeholder="Digite a mensagem codificada."wrap="soft">
+         </textarea>
+        </form>
+      </div>
+      <div class="buttons">
+        <button id="encrypt" type="submit">CODIFICAR</button>
+        <button id="decrypt" type="submit">DESCODIFICAR</button>
+      </div>
+    </main>
 
-</head>
-
-<body>
-  <header> 
-  <h1> CÉSAR CIPHER WARS</h1>
-  <h2>
-  <p> O que é cifra de césar: <a href ="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Clique aqui</a></p>
-      <p>Frases de Star Wars: <a href ="https://www.pensador.com/frases_star_wars/" target="_blank">Clique aqui</a></p>
-    </h2>
-    </header>
-
-  <main> 
-    <div class="table"> 
-      <form>
-        <textarea id="text" name="text_message" type="text" placeholder="Digite uma frase de Star Wars." wrap="soft"> </textarea>
-           <div class="key">
-          <p> <strong> DESLOCAMENTO </strong> </p>
-          <input id="offset" type="number" name="offset" value="0"> 
-           </div>
-        <textarea id="code" name="cipher" type="text" placeholder="Digite a mensagem codificada." wrap="soft"> </textarea>   
-      </form>
-    <div class="buttons">
-      <button id="encrypt" type="submit"> CODIFICAR </button>
-      <button id="decrypt" type="submit"> DESCODIFICAR </button>
-    </div> 
-    <div id="root">
-   
-  </div>
-  
-  </main>
-
-  <footer> Beatriz Ferraz - 2021 </footer>
-  <script src="index.js" type="module"></script>
-  <script src="cipher.js"type="module"></script>
-</body>
+    <footer>Beatriz Ferraz - 2021</footer>
+    <script src="./index.js" type="module"></script>
+    <script src="./cipher.js" type="module"></script>
+  </body>
 </html>
