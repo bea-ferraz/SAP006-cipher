@@ -1,9 +1,95 @@
+:root {
+ --color-primary: #917758;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+
+}
 body {
-    background-image: url(Img/Startwars3.jpeg);
-   background-repeat: no-repeat;
-   background-size: cover ;
-   text-align: justify;
-   color: #000000;
+	font-family: 'Roboto Mono', monospace;
+}
+
+.home {
+	background-size: cover;
+	background-image: url(Img/navstar.jpg);
+	height: 100vh;
+}
+.home .header {
+	padding: 30px 0
+}
+
+.home .header .nav {
+	display: flex;
+	justify-content: center;
+
+}
+
+.home .header .nav ul {
+	display: flex;
+	list-style: none;
+
+}
+
+.home .header .nav ul li {
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+}
+
+.home .header .nav ul a {
+	color: rgb(250, 248, 155);
+
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;
+	display: flex;
+	
+}
+
+.home .header .nav ul li a:hover {
+	border-bottom: 1px solid var (--color-primary);
+	color: var (--color-primary);
+}
+
+.home .banner {
+	color:rgb(14, 0, 0);
+	text-align:center;
+}
+
+.home .banner span {
+	display: block;
+}
+
+.home .banner .slogan {
+	color: rgb(255, 255, 255);
+}
+
+.about {
+	height: 100vh;
+	background-color: #917758ad;
+}
+
+.about .container {
+	display: flex;
+}
+
+.about .timing {
+	width: 33%;
+	padding: 20px;
+	background-image: url(Img/logo.jpg);
+}
+
+.about .timing .overlay {
+	background:rgba(0, 0, 0, 0.8) ;
+}
+
+.about .experience {
+	width: 66%;
 }
 
 a {
@@ -11,10 +97,10 @@ a {
     justify-content: left;
     padding-top: 25px;
     font-family: 'Roboto Mono', monospace;
-    font-size: 22px;;
+    font-size: 22px;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgba(245, 255, 245, 0.87);
 }
 
 form {
@@ -22,7 +108,6 @@ form {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-inline: 150px;
     margin-top: 50px;    
 }
 .table textarea {
@@ -30,13 +115,12 @@ form {
     height: 360px;
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
-    border-color:#fffefe;
+    border-color:#13b1fa;
     border-radius: 30px;
     text-align: center;
     padding: 30px;
     
 }
-
 .key input {
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
@@ -47,7 +131,8 @@ form {
 }
 input {
     text-align: center;
-    }
+}
+
 p {
     font-size: 25px;
     margin-top: 65px;
@@ -60,7 +145,7 @@ p {
     
 }
 button {
-    background-color: #e4f551 ;
+    background-color: #fffb0070 ;
     border-radius: 20px;
     height: 58px;
     width: 264px;
@@ -69,10 +154,5 @@ button {
 }
     button:hover {
     background-color: #e2ec52;
-    }
-footer {
-    background-color: rgba(255, 255, 255, 0.178);
-    text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
+
 }
