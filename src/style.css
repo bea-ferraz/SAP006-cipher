@@ -1,5 +1,9 @@
+/********
+*HOME
+*********/
 :root {
  --color-primary: #917758;
+ --color-secundary: #3c2915;
 }
 
 *{
@@ -68,30 +72,48 @@ body {
 .home .banner .slogan {
 	color: rgb(255, 255, 255);
 }
+/********
+*SERVICES
+*********/
 
-.about {
-	height: 100vh;
-	background-color: #917758ad;
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
 }
-
-.about .container {
-	display: flex;
+  
+  .services h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
 }
-
-.about .timing {
-	width: 33%;
-	padding: 20px;
-	background-image: url(Img/logo.jpg);
+  
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
 }
-
-.about .timing .overlay {
-	background:rgba(0, 0, 0, 0.8) ;
+  
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
 }
-
-.about .experience {
-	width: 66%;
+  
+.services .box h4 {
+    color: var(--color-secondary);
+    margin-top: 30px;
 }
-
+  
+.services .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+/********
+*ciper
+*********/
 a {
     display: flex;
     justify-content: left;
