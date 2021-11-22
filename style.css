@@ -1,20 +1,133 @@
-body {
-    background-image: url(Img/Startwars3.jpeg);
-   background-repeat: no-repeat;
-   background-size: cover ;
-   text-align: justify;
-   color: #000000;
+/********
+*HOME
+*********/
+:root {
+ --color-primary: #917758;
+ --color-secundary: #3c2915;
+ --color-primary-light: #f5eee6;
 }
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+
+}
+body {
+	font-family: 'Roboto Mono', monospace;
+}
+
+.home {
+	background-size: cover;
+	background-image: url(Img/navstar.jpg);
+	height: 100vh;
+}
+.home .header {
+	padding: 30px 0
+}
+
+.home .header .nav {
+	display: flex;
+	justify-content: center;
+
+}
+
+.home .header .nav ul {
+	display: flex;
+	list-style: none;
+
+}
+
+.home .header .nav ul li {
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+}
+
+.home .header .nav ul a {
+	color: var(--color-primary-light);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 20px;
+	display: flex;
+	
+}
+
+.home .header .nav ul li a:hover {
+	border-bottom: 1px solid;
+	color: var(--color-secundary);
+}
+
+.home .banner {
+	color:rgb(0, 0, 0);
+	text-align:center;
+}
+
+.home .banner span {
+	display: block;
+}
+
+.home .banner .slogan {
+	color: var(--color-secundary);
+}
+/********
+*SERVICES
+*********/
+
+.services {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--color-primary-light);
+}
+
+.services h2 {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+  
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.services .boxes img {
+    width: 50px; 
+
+}
+  
+.services .box {
+    border: 3px solid var(--color-primary);
+    padding: 50px 40px;
+    margin: 30px;
+}
+  
+.services .box h4 {
+    color: var(--color-secondary);
+    margin-top: 30px;
+}
+  
+.services .box p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 25px;
+}
+    
+/********
+*cipher
+*********/
 a {
     display: flex;
     justify-content: left;
     padding-top: 25px;
     font-family: 'Roboto Mono', monospace;
-    font-size: 22px;;
+    font-size: 22px;
     text-decoration: none;
     font-weight: bold;
-    color: rgb(0, 0, 0);
+    color: rgba(245, 255, 245, 0.87);
 }
 
 form {
@@ -22,7 +135,6 @@ form {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-inline: 150px;
     margin-top: 50px;    
 }
 .table textarea {
@@ -30,13 +142,12 @@ form {
     height: 360px;
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
-    border-color:#fffefe;
+    border-color:#917758;
     border-radius: 30px;
     text-align: center;
     padding: 30px;
     
 }
-
 .key input {
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
@@ -47,7 +158,8 @@ form {
 }
 input {
     text-align: center;
-    }
+}
+
 p {
     font-size: 25px;
     margin-top: 65px;
@@ -60,19 +172,14 @@ p {
     
 }
 button {
-    background-color: #e4f551 ;
+    background-color: var(--color-primary-light);
     border-radius: 20px;
     height: 58px;
     width: 264px;
     font-family: 'Secular One', sans-serif;
     font-size: 25px;
 }
-    button:hover {
-    background-color: #e2ec52;
-    }
-footer {
-    background-color: rgba(255, 255, 255, 0.178);
-    text-align: center;
-    font-size: 25px;
-    padding-top: 50px;
+button:hover {
+    background-color: var(--color-primary);
+
 }
