@@ -4,6 +4,7 @@
 :root {
  --color-primary: #917758;
  --color-secundary: #3c2915;
+ --color-primary-light: #f5eee6;
 }
 
 *{
@@ -44,8 +45,7 @@ body {
 }
 
 .home .header .nav ul a {
-	color: rgb(250, 248, 155);
-
+	color: var(--color-primary-light);
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: bold;
@@ -56,12 +56,12 @@ body {
 }
 
 .home .header .nav ul li a:hover {
-	border-bottom: 1px solid var (--color-primary);
-	color: var (--color-primary);
+	border-bottom: 1px solid;
+	color: var(--color-secundary);
 }
 
 .home .banner {
-	color:rgb(14, 0, 0);
+	color:rgb(0, 0, 0);
 	text-align:center;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 .home .banner .slogan {
-	color: rgb(255, 255, 255);
+	color: var(--color-secundary);
 }
 /********
 *SERVICES
@@ -81,8 +81,8 @@ body {
     text-align: center;
     background-color: var(--color-primary-light);
 }
-  
-  .services h2 {
+
+.services h2 {
     color: var(--color-secondary);
     font-weight: 400;
     font-size: 50px;
@@ -93,6 +93,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+}
+.services .boxes img {
+    width: 50px; 
+
 }
   
 .services .box {
@@ -111,8 +115,9 @@ body {
     font-size: 14px;
     line-height: 25px;
 }
+    
 /********
-*ciper
+*cipher
 *********/
 a {
     display: flex;
@@ -137,7 +142,7 @@ form {
     height: 360px;
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
-    border-color:#13b1fa;
+    border-color:#917758;
     border-radius: 30px;
     text-align: center;
     padding: 30px;
@@ -167,14 +172,14 @@ p {
     
 }
 button {
-    background-color: #fffb0070 ;
+    background-color: var(--color-primary-light);
     border-radius: 20px;
     height: 58px;
     width: 264px;
     font-family: 'Secular One', sans-serif;
     font-size: 25px;
 }
-    button:hover {
-    background-color: #e2ec52;
+button:hover {
+    background-color: var(--color-primary);
 
 }
